@@ -1,0 +1,158 @@
+.navbar {
+    img {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.path{
+    position: relative;
+    .path-atas-hitam {
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+    }
+
+    .path-atas-biru{
+        img{
+            position: absolute;
+            width: 751.56px;
+            height: 182.83px;
+            left: 40px;
+        }
+    }
+
+    .path-atas-tulisan{
+        position: absolute;
+        z-index: 3;
+        color: white;
+        width: 100%;
+        top: 84px;
+
+        .weekend{
+            font-size: 62px;
+            text-align: center;
+            line-height: 52px;
+            font-weight: Bold;
+            margin-bottom: 10px;
+        }
+
+        .stay{
+            font-size: 21px;
+            text-align: center;
+            line-height: 25px;
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+
+    .path-lingkaran-biru{
+        position: absolute;
+        width: 132px;
+        aspect-ratio: 1/1;
+        background-color: #0B24FB;
+        z-index: 3;
+        border-radius: 100%;
+        left: 360px;
+        top: 220px;
+    }
+
+    .path-bitmap-utama{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 20px;
+        // left: 670px;
+        // border: 1px solid red;
+        height: 100%;
+        img{
+            // border: 1px solid red;
+            position: relative;
+            z-index: 3;
+            width: 184px;
+            height: 305px;
+            top: 50px;
+            left: 22px;
+        }
+
+        .letsgo{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+            width: 231px;
+            height: 58px;
+            border-radius: 29px;
+            background-color: #fff;
+            text-align: center;
+            line-height: 58px;
+            top: -60px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    }
+    .path-atas-pink{
+        position: absolute;
+        top: 303px;
+        right: 150px;
+    }
+}
+
+
+@media screen and (max-width : 600px){
+    .path{
+        .path-atas-biru {
+                img {
+                    position: absolute;
+                    width: 751.56px;
+                    height: 182.83px;
+                    left: -500px;
+                    // top: -40px;
+                }
+            }
+
+        .path-lingkaran-biru {
+            position: absolute;
+            width: 132px;
+            aspect-ratio: 1/1;
+            background-color: #0B24FB;
+            z-index: 3;
+            border-radius: 100%;
+            left: -100px;
+            top: 220px;
+        }
+
+        .path-bitmap-utama{
+            top: 30px;
+        }
+
+        .path-atas-tulisan{
+            .weekend{
+                font-size: 52px;
+            }
+
+            .stay{
+                font-size: 16px;
+            }
+        }
+    
+        .path-atas-pink{
+            display: none;
+        }
+    }
+}
+
+.section-word{
+    .box-name{
+        .definition{
+            color: #0B24FB;
+            font-weight: 700;
+        }
+    }
+}

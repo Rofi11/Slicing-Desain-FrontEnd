@@ -1,24 +1,26 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import PageUtama from './Pages/PageUtama';
+import {Box,Container, ThemeProvider} from '@mui/material'
+import { makeStyles, createTheme } from "@mui/material/styles";
+
 
 function App() {
+  const theme = createTheme({
+    breakpoints : {
+      values : {
+        xs: 0,
+        sm: 600,
+        md: 960,
+        lg : 1280,
+        xl: 1366,
+      }
+    }
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+        <PageUtama/>
+    </ThemeProvider>
   );
 }
 
