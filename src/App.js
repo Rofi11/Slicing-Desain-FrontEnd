@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.scss';
 import PageUtama from './Pages/PageUtama';
-import {Box,Container, ThemeProvider} from '@mui/material'
-import { makeStyles, createTheme } from "@mui/material/styles";
-
+import {ThemeProvider} from '@mui/material'
+import {createTheme } from "@mui/material/styles";
 
 function App() {
   const theme = createTheme({

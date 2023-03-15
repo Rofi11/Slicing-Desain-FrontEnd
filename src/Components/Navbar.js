@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {Box, Stack} from '@mui/material'
 import bitmapNavbar from '../Assets/Images/bitmap-navbar.png'
-import '../App.scss';
+// import '../App.scss';
+import '../Assets/Style/Navbar.scss'
 
 function Navbar(){
     return(
